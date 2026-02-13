@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+const submitBtnEl = document.getElementById("submit-btn");
 const emailInputBtnEl = document.getElementById("email-input");
 const errorBtnLabelEl = document.getElementById("email-error-label");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,8 +19,17 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+document.addEventListener("input", () => {
+  if (emailPattern.test(emailInputBtnEl.value)) {
+    submitBtnEl.style.backgroundImage =
+      "linear-gradient(to right, #ff6a3d, #ff527b)";
+  } else {
+    submitBtnEl.style.backgroundImage = "";
+  }
+});
+
 document.addEventListener("click", (e) => {
-  const btn = e.target.closest("#submit");
+  const btn = e.target.closest("#submit-btn");
 
   if (!btn) {
     errorBtnLabelEl.classList.add("hidden");

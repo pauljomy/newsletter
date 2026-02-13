@@ -3,39 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Newsletter</title>
   </head>
-  <body>
-    <img
-      src="/src/assets/images/illustration-sign-up-mobile.svg"
-      alt="An image of browser image with a number 94 which resembles a score"
-    />
-    <h1>Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <div>
+  <body
+    class="font-default-family text-default md:bg-default bg-white flex flex-col justify-center items-center min-h-screen"
+  >
+    <div class="md:hidden">
+      <img
+        src="/src/assets/images/illustration-sign-up-mobile.svg"
+        alt="An image of browser image with a number 94 which resembles a score"
+        class="w-full"
+      />
+    </div>
+
+    <div
+      class="mx-6 my-10 md:max-w-152 md:mx-auto bg-white md:p-10 rounded-3xl xl:flex xl:max-w-226 gap-16"
+    >
       <div>
-        <img src="/src/assets/images/icon-list.svg" alt="An icon of tickmark" />
-        <p>Product discovery and building what matters</p>
+        <div class="hidden md:block mb-10 xl:hidden">
+          <img
+            src="/src/assets/images/illustration-sign-up-tablet.svg"
+            alt="An image of browser image with a number 94 which resembles a score"
+            class="w-full"
+          />
+        </div>
+        <h1 class="text-[2.5rem] font-bold mb-6">Stay updated!</h1>
+        <p class="mb-6">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="flex flex-col gap-2 mb-10">
+          <div class="flex gap-4 items-start">
+            <img
+              src="/src/assets/images/icon-list.svg"
+              alt="An icon of tickmark"
+            />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="flex gap-4 items-start">
+            <img
+              src="/src/assets/images/icon-list.svg"
+              alt="An icon of tickmark"
+            />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="/src/assets/images/icon-list.svg"
+              alt="An icon of tickmark"
+            />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <form action="#" class="flex flex-col">
+          <label for="email" class="text-[0.75rem] font-bold mb-2"
+            >Email address</label
+          >
+          <input
+            class="px-6 py-4 border rounded-lg mb-6"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+            required
+          />
+          <button
+            class="bg-default text-white px-12 py-4 rounded-lg"
+            type="submit"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
       </div>
-      <div>
-        <img src="/src/assets/images/icon-list.svg" alt="An icon of tickmark" />
-        <p>Measuring to ensure updates are a success</p>
-      </div>
-      <div>
-        <img src="/src/assets/images/icon-list.svg" alt="An icon of tickmark" />
-        <p>And much more!</p>
+      <div class="hidden xl:block mb-10">
+        <img
+          src="/src/assets/images/illustration-sign-up-desktop.svg"
+          alt="An image of browser image with a number 94 which resembles a score"
+          class="w-full"
+        />
       </div>
     </div>
-    <form action="#">
-      <label for="email" id="email">Email address</label>
-      <button type="submit">Subscribe to monthly newsletter</button>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="email@company.com"
-        required
-      />
-    </form>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

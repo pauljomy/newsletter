@@ -9,77 +9,79 @@
     <body
         class="font-default-family text-default md:bg-default bg-white flex flex-col justify-center items-center min-h-screen"
     >
-        <div class="md:hidden">
-            <img
-                src="/src/assets/images/illustration-sign-up-mobile.svg"
-                alt="An image of browser image with a number 94 which resembles a score"
-                class="w-full"
-            />
-        </div>
+        <main id="main">
+            <div class="md:hidden">
+                <img
+                    src="/src/assets/images/illustration-sign-up-mobile.svg"
+                    alt="An image of browser image with a number 94 which resembles a score"
+                    class="w-full"
+                />
+            </div>
 
-        <div
-            class="mx-6 my-10 md:max-w-152 md:mx-auto bg-white md:p-10 xl:px-8 xl:py-6 rounded-3xl xl:flex xl:max-w-226 gap-16 xl:items-center"
-        >
-            <div>
-                <div class="hidden md:block mb-10 xl:hidden">
-                    <img
-                        src="/src/assets/images/illustration-sign-up-tablet.svg"
-                        alt="An image of browser image with a number 94 which resembles a score"
-                        class="w-full"
-                    />
-                </div>
-                <h1 class="text-[2.5rem] font-bold mb-6">Stay updated!</h1>
-                <p class="mb-6">
-                    Join 60,000+ product managers receiving monthly updates on:
-                </p>
-                <div class="flex flex-col gap-2 mb-10">
-                    <div class="flex gap-4 items-start">
+            <div
+                class="mx-6 my-10 md:max-w-152 md:mx-auto bg-white md:p-10 xl:px-8 xl:py-6 rounded-3xl xl:flex xl:max-w-226 gap-16 xl:items-center"
+            >
+                <div>
+                    <div class="hidden md:block mb-10 xl:hidden">
                         <img
-                            src="/src/assets/images/icon-list.svg"
-                            alt="An icon of tickmark"
+                            src="/src/assets/images/illustration-sign-up-tablet.svg"
+                            alt="An image of browser image with a number 94 which resembles a score"
+                            class="w-full"
                         />
-                        <p>Product discovery and building what matters</p>
                     </div>
-                    <div class="flex gap-4 items-start">
-                        <img
-                            src="/src/assets/images/icon-list.svg"
-                            alt="An icon of tickmark"
-                        />
-                        <p>Measuring to ensure updates are a success</p>
+                    <h1 class="text-[2.5rem] font-bold mb-6">Stay updated!</h1>
+                    <p class="mb-6">
+                        Join 60,000+ product managers receiving monthly updates
+                        on:
+                    </p>
+                    <div class="flex flex-col gap-2 mb-10">
+                        <div class="flex gap-4 items-start">
+                            <img
+                                src="/src/assets/images/icon-list.svg"
+                                alt="An icon of tickmark"
+                            />
+                            <p>Product discovery and building what matters</p>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <img
+                                src="/src/assets/images/icon-list.svg"
+                                alt="An icon of tickmark"
+                            />
+                            <p>Measuring to ensure updates are a success</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <img
+                                src="/src/assets/images/icon-list.svg"
+                                alt="An icon of tickmark"
+                            />
+                            <p>And much more!</p>
+                        </div>
                     </div>
-                    <div class="flex gap-4">
-                        <img
-                            src="/src/assets/images/icon-list.svg"
-                            alt="An icon of tickmark"
-                        />
-                        <p>And much more!</p>
-                    </div>
-                </div>
-                <form action="#" class="flex flex-col" novalidate id="form">
-                    <div
-                        class="text-[0.75rem] font-bold mb-2 flex justify-between"
-                    >
-                        <label for="email">Email address</label>
-                        <label
-                            id="email-error-label"
-                            for="email"
-                            class="text-error-text hidden"
-                            >Valid email required</label
+                    <form action="#" class="flex flex-col" novalidate id="form">
+                        <div
+                            class="text-[0.75rem] font-bold mb-2 flex justify-between"
                         >
-                    </div>
-                    <div>
-                        <input
-                            id="email-input"
-                            class="w-full px-6 py-4 border rounded-lg mb-6 font-default-family"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="email@company.com"
-                            required
-                        />
-                    </div>
+                            <label for="email">Email address</label>
+                            <label
+                                id="email-error-label"
+                                for="email"
+                                class="text-error-text hidden"
+                                >Valid email required</label
+                            >
+                        </div>
+                        <div>
+                            <input
+                                id="email-input"
+                                class="w-full px-6 py-4 border rounded-lg mb-6 font-default-family"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="email@company.com"
+                                required
+                            />
+                        </div>
 
-                    <!--<div>
+                        <!--<div>
                         <input
                             class="w-full px-6 py-4 border bg-input-text-error-bg font-default-family border-error-text text-error-text rounded-lg mb-6"
                             type="email"
@@ -90,24 +92,52 @@
                         />
                     </div>-->
 
-                    <button
-                        id="submit-btn"
-                        class="bg-default text-white px-12 py-4 rounded-lg"
-                        type="submit"
-                    >
-                        Subscribe to monthly newsletter
-                    </button>
-                </form>
+                        <button
+                            id="submit-btn"
+                            class="bg-default text-white px-12 py-4 rounded-lg"
+                            type="submit"
+                        >
+                            Subscribe to monthly newsletter
+                        </button>
+                    </form>
+                </div>
+                <div class="hidden xl:block">
+                    <img
+                        src="/src/assets/images/illustration-sign-up-desktop.svg"
+                        alt="An image of browser image with a number 94 which resembles a score"
+                        class="w-full"
+                    />
+                </div>
             </div>
-            <div class="hidden xl:block">
-                <img
-                    src="/src/assets/images/illustration-sign-up-desktop.svg"
-                    alt="An image of browser image with a number 94 which resembles a score"
-                    class="w-full"
-                />
+        </main>
+        <div id="success" class="mx-6 mt-24 mb-12 md:max-w-126 hidden">
+            <div
+                class="bg-white rounded-3xl md:p-16 min-h-screen md:min-h-0 flex flex-col justify-between"
+            >
+                <div>
+                    <img
+                        src="/src/assets/images/icon-list.svg"
+                        alt="A tickmark Icon"
+                        class="h-16 w-16 mb-8"
+                    />
+                    <h1 class="text-[2.5rem] font-bold mb-6 leading-10">
+                        Thanks for subscribing!
+                    </h1>
+                    <p class="mb-8">
+                        A confirmation email has been sent to
+                        <span id="input-email" class="font-bold"></span>. Please
+                        open it and click the button inside to confirm your
+                        subscription
+                    </p>
+                </div>
+                <button
+                    id="dismiss-btn"
+                    class="bg-default text-white px-12 py-4 rounded-lg w-full"
+                >
+                    Dismiss message
+                </button>
             </div>
         </div>
-
         <script type="module" src="/src/main.js"></script>
     </body>
 </html>

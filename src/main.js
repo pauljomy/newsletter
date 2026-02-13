@@ -1,7 +1,11 @@
+const main = document.getElementById("main");
 const form = document.getElementById("form");
 const submitBtnEl = document.getElementById("submit-btn");
 const emailInputBtnEl = document.getElementById("email-input");
 const errorBtnLabelEl = document.getElementById("email-error-label");
+const success = document.getElementById("success");
+const dismissBtnEl = document.getElementById("dismiss-btn");
+const inputEmailEl = document.getElementById("input-email");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 form.addEventListener("submit", (e) => {
@@ -17,6 +21,17 @@ form.addEventListener("submit", (e) => {
       "text-error-text",
     );
   }
+
+  if (emailPattern.test(data.email)) {
+    main.classList.add("hidden");
+    success.classList.remove("hidden");
+    inputEmailEl.textContent = data.email;
+  }
+});
+
+dismissBtnEl.addEventListener("click", () => {
+  main.classList.remove("hidden");
+  success.classList.add("hidden");
 });
 
 document.addEventListener("input", () => {

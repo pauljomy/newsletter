@@ -3,7 +3,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-default: #242742;
+    --color-default: #242742;
+    --color-error-text: #ff6155;
+    --color-input-text-error-bg: #ffe7e6;
 
-  --font-default-family: "Roboto", sans-serif;
+    --font-default-family: "Roboto", sans-serif;
 }
